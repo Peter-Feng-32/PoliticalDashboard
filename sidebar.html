@@ -1,0 +1,82 @@
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar customSB">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.html">
+        <div class="sidebar-brand-text mx-3">POLITIQUACK</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('home')}}">
+          <i class="fas fa-home"></i>
+          <span>Home</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        APPS
+      </div>
+
+
+
+      <!-- Other applications in order -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('impdates')}}">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span>Important Dates</span></a>
+  </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('bd')}}">
+          <i class="far fa-keyboard"></i>
+    <span>Fake News Detection</span></a>
+  </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('pn')}}">
+          <i class="far fa-newspaper"></i>
+          <span>Political News</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('tweets')}}">
+          <i class="fas fa-bullhorn"></i>
+          <span>Political Tweets</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('tips')}}">
+          <i class="far fa-lightbulb"></i>
+          <span>General Tips</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('contact')}}">
+          <i class="fas fa-phone-volume"></i>
+          <span>Contact Representatives</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <script src="{{ url_for('static', filename='js/sb-admin-2.min.js') }}"></script>
+
+      <!-- End of Sidebar -->
